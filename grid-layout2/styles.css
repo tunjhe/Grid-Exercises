@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) repeat(1, 5fr) repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
+  gap: 15px;
+}
+
+.container > div {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.container > div > .bold {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header {
+  background: #ffde22;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.sidebar {
+  grid-row: 2/-2;
+  grid-column: 1/2;
+  background: #ff7755;
+}
+
+.nav {
+  grid-row: 2/3;
+  grid-column: 2/-1;
+  background: #12cfec;
+}
+
+.article {
+  grid-row: 3/-2;
+  grid-column: 2/-1;
+  background: #bccbde;
+}
+
+.footer {
+  grid-column: 1/-1;
+  grid-row: -2/-1;
+  background: #393f4d;
+}
